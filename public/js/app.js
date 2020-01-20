@@ -7,7 +7,7 @@ weatherForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const location = search.value;
 
-  messeageOne.textContent = '<Loading></Loading>...';
+  messeageOne.textContent = 'Loading...';
   messeageTwo.textContent = '';
 
   fetch(`http://localhost:3000/weather?address=${location}`).then((response) => {
